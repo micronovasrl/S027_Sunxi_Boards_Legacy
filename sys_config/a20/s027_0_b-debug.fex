@@ -746,10 +746,10 @@ kp_out7 = port:PH27<4><1><default><default>
 ; USB0
 [usbc0]
 usb_used = 1
-usb_port_type = 1
+usb_port_type = 0
 usb_detect_type = 0
 usb_drv_vbus_gpio = port:PB13<1><0><default><0>
-usb_host_init_state = 1
+usb_host_init_state = 0
 usb_restric_flag = 0
 usb_restric_voltage = 3550000
 
