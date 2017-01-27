@@ -173,19 +173,17 @@ uart_rts_gpio = port:PA12<1><0><default><default>
 uart_used = 1
 uart_port = 2
 uart_type = 2
-uart_tx = port:PI16<4><1><default><default>
-uart_rx = port:PI17<4><1><default><default>
+uart_tx = port:PI18<3><1><default><default>
+uart_rx = port:PI19<3><1><default><default>
 uart_half_duplex = 1
 
 ; UNUSED
 [uart_para3]
 uart_used = 0
 uart_port = 3
-uart_type = 4
+uart_type = 2
 uart_tx = port:PH00<4><1><default><default>
 uart_rx = port:PH01<4><1><default><default>
-uart_rts = port:PH02<4><1><default><default>
-uart_cts = port:PH03<4><1><default><default>
 
 ; UNUSED
 [uart_para4]
