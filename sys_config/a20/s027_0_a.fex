@@ -992,3 +992,7 @@ gpio_pin_1 = port:PH16
 
 [gpio_init]
 pin_1 = port:PH16<1><default><default><0>
+
+[usb_wifi_para]
+usb_wifi_used = 1
+usb_wifi_usbc_num = 1
