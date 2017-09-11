@@ -1017,7 +1017,7 @@ pin_3 = port:PH22<1><default><default><0>
 pin_4 = port:PH23<1><default><default><0>
 pin_5 = port:PH17<1><default><default><0>
 pin_6 = port:PH19<1><default><default><0>
-pin_7 = port:PIO6<1><default><default><0>
+pin_7 = port:PI06<1><default><default><0>
 
 
 [usb_wifi_para]
