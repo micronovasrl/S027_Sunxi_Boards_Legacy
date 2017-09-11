@@ -1,6 +1,6 @@
 [product]
 version = "100"
-machine = "s027_1_b"
+machine = "s027_1_a"
 
 [platform]
 eraseflag = 0
@@ -274,21 +274,21 @@ ctp_used = 1
 ctp_name = "ft5x_ts"
 ctp_twi_id = 2
 ctp_twi_addr = 0x38
-ctp_screen_max_x = 800
-ctp_screen_max_y = 480
-ctp_max_x = 800
-ctp_max_y = 480
+ctp_screen_max_x = 480
+ctp_screen_max_y = 272
+ctp_max_x = 480
+ctp_max_y = 272
 ctp_screen_rotate = 0
 ctp_revert_x_flag = 0
 ctp_revert_y_flag = 0
 ctp_exchange_x_y_flag = 0
-ctp_thgroup = 14
-ctp_thpeak = 50
-ctp_thcal = 25
-ctp_thwater = 211
-ctp_thtemp = 235
+ctp_thgroup = 11
+ctp_thpeak = 45
+ctp_thcal = 233
+ctp_thwater = 1
+ctp_thtemp = 1
 ctp_thdiff = 160
-ctp_period_active = 12
+ctp_period_active = 6
 ctp_ctrl = 0
 ctp_power_mode = 0
 ctp_autocal_en = 1
@@ -360,21 +360,21 @@ lcd1_contrast = 50
 lcd1_saturation = 57
 lcd1_hue = 50
 
-; 7" lcd
+; 4.3" lcd
 [lcd0_para]
 lcd_used = 1
-lcd_x = 800
-lcd_y = 480
-lcd_dclk_freq = 30
+lcd_x = 480
+lcd_y = 272
+lcd_dclk_freq = 9
 lcd_pwm_not_used = 0
 lcd_pwm_ch = 0
 lcd_pwm_freq = 10000
 lcd_pwm_pol = 1
 lcd_if = 0
-lcd_hbp = 64
-lcd_ht = 928
-lcd_vbp = 22
-lcd_vt = 1050
+lcd_hbp = 40
+lcd_ht = 525
+lcd_vbp = 8
+lcd_vt = 576
 lcd_vspw = 8
 lcd_hspw = 5
 lcd_hv_if = 0
@@ -992,13 +992,33 @@ pwm_duty_percent = 50
 pwm_prescaler = 15
 
 [gpio_para]
-gpio_used = 1
-gpio_num = 1
+gpio_used = 7
+gpio_num = 7
 ; BUZZER 
 gpio_pin_1 = port:PH16
+;REL
+gpio_pin_2 = port:PH15
+;AUX1
+gpio_pin_3 = port:PH22
+;AUX2
+gpio_pin_4 = port:PH23
+;LED WHITE
+gpio_pin_5 = port:PH17
+;LED BLUE
+gpio_pin_6 = port:PH19
+;LCD POWER
+gpio_pin_7 = port:PI06
+
 
 [gpio_init]
 pin_1 = port:PH16<1><default><default><0>
+pin_2 = port:PH15<1><default><default><0>
+pin_3 = port:PH22<1><default><default><0>
+pin_4 = port:PH23<1><default><default><0>
+pin_5 = port:PH17<1><default><default><0>
+pin_6 = port:PH19<1><default><default><0>
+pin_7 = port:PIO6<1><default><default><0>
+
 
 [usb_wifi_para]
 usb_wifi_used = 1
